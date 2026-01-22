@@ -1,40 +1,79 @@
 /* src/index.css */
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .weather {
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   text-align: center;
-  font-family: sans-serif;
-  border-radius: 8px;
-  background: #f5f5f5;
+}
+
+.weather h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
 }
 
 .weather-form {
   display: flex;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .weather input {
   flex: 1;
-  padding: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.weather input:focus {
+  border-color: #6c63ff;
 }
 
 .weather button {
-  padding: 8px 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
+  transition: background 0.2s;
+}
+
+.weather button:hover {
+  background: #554ee2;
 }
 
 .temp {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
+  margin-top: 10px;
+  color: #222;
 }
 
 .error {
-  color: red;
+  margin-top: 10px;
+  color: #e63946;
+  font-weight: 500;
 }

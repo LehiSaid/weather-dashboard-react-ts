@@ -23,24 +23,25 @@ export default function App() {
     }
   }
 
-return (
-  <div className="weather">
-  <h1>🌤️ Weather Dashboard</h1>
+  return (
+    <div className="weather">
+      <h1>🌤️ Weather Dashboard</h1>
 
-  <div className="weather-form">
-    <input
-      type="text"
-      placeholder="Enter city"
-      value={city}
-      onChange={e => setCity(e.target.value)}
-    />
-    <button onClick={getWeather}>Get Weather</button>
-  </div>
+      <div className="weather-form">
+        <input
+          type="text"
+          placeholder="Enter city"
+          value={city}
+          onChange={e => setCity(e.target.value)}
+        />
+        <button onClick={getWeather}>Get Weather</button>
+      </div>
 
-  {error && <p className="error">{error}</p>}
-  {temp !== null && !error && (
-    <p className="temp">🌡️ {temp} °C</p>
-  )}
-</div>
+      {error && <p className="error">{error}</p>}
+      {temp !== null && !error && (
+        <p className="temp">🌡️ {temp} °C</p>
+      )}
+    </div>
+
   )
 } 
