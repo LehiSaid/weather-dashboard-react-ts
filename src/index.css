@@ -1,0 +1,40 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.weather {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+
+.weather-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.weather input {
+  flex: 1;
+  padding: 8px;
+}
+
+.weather button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.temp {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
